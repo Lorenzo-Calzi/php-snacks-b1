@@ -42,16 +42,16 @@ $posts = [
 
     /* var_dump($posts); */
 
-     foreach( $posts as $post) {
-        /* var_dump($post) ; */
+     foreach( $posts as $date => $post) {
 
         foreach($post as $elements){
-             var_dump($elements) ;
+            echo '<h1>' . $elements["title"] . '</h1>';
+            echo($date);
 
             foreach($elements as $element){
-                echo '<p>';
+                echo'<p>';
                 echo($element);
-                echo '</p>';
+                echo'</p>';
             }
         }
 
